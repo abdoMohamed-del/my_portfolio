@@ -316,16 +316,17 @@ max-width: 85px;
     border-bottom: 2px solid #ccc;
 }
 #project .row{
-    display: flex;
-    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap: 2rem;
-    margin: 4rem;
-    
+    gap: 3rem;
+    margin: 5rem 7rem 5rem 7rem;   
 }
 #project .row .item{
     background-color: #fff;
     border-radius: 5px;
+    
+    
     transition: all 0.3s ease;
 }
 #project .row .item:hover{
@@ -469,9 +470,9 @@ header .header_content .text h1{
 }  
 .navbar .nave .name{
      text-align: center; 
-     margin-right: 20px; 
-      padding-right: 45px; 
-      font-size: 20px; 
+     margin-right: 18px; 
+      padding-right: 40px; 
+      font-size: 16px; 
     }
 .navbar .nave a{
     margin-right: 10px;
@@ -484,9 +485,10 @@ header .header_content .text h1{
     font-size: 23px;
    }
    header .header_content img{
-    margin-top: -100px;
+    margin-top: -80px;
     max-width: 600px;
     max-height: 320px;
+    padding-left: 55px;
    }
    .content .title,
    #skills .title,
@@ -509,5 +511,8 @@ header .header_content .text h1{
 }
 #contact .row{
     padding: 2rem 1rem;
+}
+#project .row{
+    margin: 5rem;
 }
 }
